@@ -26,7 +26,7 @@ const signIn = (req, res) => {
 			res.send(user.email);
 			
 		} else {
-			res.send("You do not have an account. Please sign up!")
+			res.status(401).send("You do not have an account. Please sign up!")
 		} 
 	})
 
