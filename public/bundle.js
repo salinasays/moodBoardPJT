@@ -117,12 +117,12 @@
 	      _react2.default.createElement(
 	        'a',
 	        { href: 'http://linkedin.com/in/salinafu', target: '_blank' },
-	        _react2.default.createElement('img', { className: 'ribbon', src: __webpack_require__(247) })
+	        _react2.default.createElement('img', { className: 'ribbon', src: __webpack_require__(248) })
 	      ),
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'logo-class' },
-	        _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(248) })
+	        _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(249) })
 	      ),
 	      _react2.default.createElement(
 	        'nav',
@@ -37606,13 +37606,14 @@
 	exports.default = Signup;
 
 /***/ },
-/* 247 */
+/* 247 */,
+/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "368cbbef7727810d14005b98c433841c.png";
 
 /***/ },
-/* 248 */
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "f3d7527265cb0f69a6b8dc022e05d078.png";
