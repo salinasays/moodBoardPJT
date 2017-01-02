@@ -36924,7 +36924,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".ribbon {\n  width: 35px;\n  position: absolute;\n  top: 0px;\n  height: 75px;\n  right: 50px;\n  transition: 1.5s;\n}\n\n.ribbon:hover {\n  height: 100px;\n  transition: 2s;\n}\n\n.logo {\n\tpadding-top: 10px;\n\tpadding-left: 10px;\n\tpadding-right: 20px;\n\twidth: 250px;\n\tdisplay: inline-block;\n\tfloat: left;\n}\n\n.title {\n\tmargin-left: 35px;\n}\n\n.heading {\n\ttext-align: center;\n}\n\n.boards {\n\ttext-align: center;\n}\n\n.about {\n    text-align: justify;\n    -moz-text-align-last: center;\n    text-align-last: center;\n\tfont-size: 15px;\n\tfont-family: \"Courier New\", Courier, monospace;\n\tmargin-left: 25%;\n\tmargin-right: 25%;\n}\n\n.list {\n\tfont-size: 18px;\n\tfont-family: \"Courier New\", Courier, monospace;\n\tlist-style: none;\n\tcolor: #e8595e;\n\tmargin-right: 40px;\n}\n\n.pin {\n\twidth: 125px;\n\tpadding-left: 42%;\n}\n\n.welcome {\n\n\tmargin-right: auto;\n\tmargin-top: auto;\n\tmargin-left: 110px;\n}\n\n.nav {\n\tpadding-top: 50px;\n\tpadding-bottom: 10px;\n}\n\na:link {\n\ttext-decoration: none;\n\tcolor: black;\n\tpadding-right: 10%;\n\tpadding-left: 0px;\n\tfont-family: \"Courier New\", Courier, monospace;\n}\n\na:hover {\n\ttext-decoration: underline;\n}\n\na:active {\n\ttext-decoration: underline;\n\tcolor: #e8595e;\n}\n\n.form {\n\tpadding-top: 50px;\n\tpadding-left: 100px;\n\tmargin: 0 auto;\n\tmargin-left: 200px;\n}\n\n.divider {\n\twidth: 750px;\n}\n\n.input {\n\tborder: none;\n\tborder-bottom: 2px solid black;\n\twidth: 600px;\n\tpadding: 12px 20px;\n\tleft: 20%;\n\tright: 20%;\n}\n\n.button {\n\tbackground-color: #e8595e;\n\tborder: none;\n\tcolor: white;\n\tpadding: 10px 25px;\n\tmargin: 5px;\n\tcursor: pointer;\n}\n\n.logout {\n\tbackground-color: #e8595e;\n\tborder: none;\n\tcolor: white;\n\tpadding: 10px 25px;\n\tmargin: 5px;\n\tcursor: pointer;\n}\n\n.containpics {\n\twidth: auto;\n\theight: auto;\n\tpadding-top: 20px;\n\tpadding-right: 20px;\n\tcursor: pointer;\n}\n\n.myPics {\n\theight: 250px;\n\tpadding: 2px;\n}\n\n.collection-imgs {\n\theight: 300px;\n\tmargin-top:50px;\n}\n\n.savedImg {\n\theight: 250px;\n}\n", ""]);
+	exports.push([module.id, ".ribbon {\n  width: 35px;\n  position: absolute;\n  top: 0px;\n  height: 75px;\n  right: 50px;\n  transition: 1.5s;\n}\n\n.ribbon:hover {\n  height: 100px;\n  transition: 2s;\n}\n\n.logo {\n\tpadding-top: 10px;\n\tpadding-left: 10px;\n\tpadding-right: 20px;\n\twidth: 250px;\n\tdisplay: inline-block;\n\tfloat: left;\n}\n\n.title {\n\tmargin-left: 35px;\n}\n\n.heading {\n\ttext-align: center;\n}\n\n.boards {\n\ttext-align: center;\n}\n\n.about {\n    text-align: justify;\n    -moz-text-align-last: center;\n    text-align-last: center;\n\tfont-size: 15px;\n\tfont-family: \"Courier New\", Courier, monospace;\n\tmargin-left: 25%;\n\tmargin-right: 25%;\n}\n\n.error {\n\tfont-size: 15px;\n\tfont-family: \"Courier New\", Courier, monospace;\n\tcolor: #e8595e;\n\tmargin-left: 25%;\n\tmargin-right: 25%;\n\ttext-align: justify;\n    -moz-text-align-last: center;\n    text-align-last: center;\n}\n\n.list {\n\tfont-size: 18px;\n\tfont-family: \"Courier New\", Courier, monospace;\n\tlist-style: none;\n\tcolor: #e8595e;\n\tmargin-right: 40px;\n}\n\n.pin {\n\twidth: 125px;\n\tpadding-left: 42%;\n}\n\n.welcome {\n\n\tmargin-right: auto;\n\tmargin-top: auto;\n\tmargin-left: 110px;\n}\n\n.nav {\n\tpadding-top: 50px;\n\tpadding-bottom: 10px;\n}\n\na:link {\n\ttext-decoration: none;\n\tcolor: black;\n\tpadding-right: 10%;\n\tpadding-left: 0px;\n\tfont-family: \"Courier New\", Courier, monospace;\n}\n\na:hover {\n\ttext-decoration: underline;\n}\n\na:active {\n\ttext-decoration: underline;\n\tcolor: #e8595e;\n}\n\n.form {\n\tpadding-top: 50px;\n\tpadding-left: 100px;\n\tmargin: 0 auto;\n\tmargin-left: 200px;\n}\n\n.divider {\n\twidth: 750px;\n}\n\n.input {\n\tborder: none;\n\tborder-bottom: 2px solid black;\n\twidth: 600px;\n\tpadding: 12px 20px;\n\tleft: 20%;\n\tright: 20%;\n}\n\n.button {\n\tbackground-color: #e8595e;\n\tborder: none;\n\tcolor: white;\n\tpadding: 10px 25px;\n\tmargin: 5px;\n\tcursor: pointer;\n}\n\n.logout {\n\tbackground-color: #e8595e;\n\tborder: none;\n\tcolor: white;\n\tpadding: 10px 25px;\n\tmargin: 5px;\n\tcursor: pointer;\n}\n\n.containpics {\n\twidth: auto;\n\theight: auto;\n\tpadding-top: 20px;\n\tpadding-right: 20px;\n\tcursor: pointer;\n}\n\n.myPics {\n\theight: 250px;\n\tpadding: 2px;\n}\n\n.collection-imgs {\n\theight: 300px;\n\tmargin-top:50px;\n}\n\n.savedImg {\n\theight: 250px;\n}\n", ""]);
 	
 	// exports
 
@@ -37371,6 +37371,8 @@
 		value: true
 	});
 	
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+	
 	var _react = __webpack_require__(1);
 	
 	var _react2 = _interopRequireDefault(_react);
@@ -37387,7 +37389,7 @@
 		displayName: 'Login',
 	
 		getInitialState: function getInitialState() {
-			return { email: '', password: null };
+			return { email: '', password: null, msg: "" };
 		},
 		handleChange: function handleChange(input, event) {
 			if (input === "email") {
@@ -37397,11 +37399,17 @@
 			}
 		},
 		userLogin: function userLogin(event) {
+			var _this = this;
+	
 			event.preventDefault();
 			_jquery2.default.ajax({
 				method: 'POST',
 				url: '/api/login/',
-				data: this.state
+				data: this.state,
+				error: function (data) {
+					console.log(_typeof(data.responseText));
+					_this.setState({ msg: data.responseText });
+				}.bind(this)
 			}).done(function (data) {
 				console.log("Received User Data", data);
 				_reactRouter.browserHistory.push('/account');
@@ -37446,12 +37454,17 @@
 						_react2.default.createElement(
 							'button',
 							{
-								className: 'button',
+								className: 'logout',
 								type: 'submit'
 							},
 							'Sign In'
 						)
 					)
+				),
+				_react2.default.createElement(
+					'p',
+					{ className: 'error' },
+					this.state.msg
 				),
 				_react2.default.createElement(
 					'p',

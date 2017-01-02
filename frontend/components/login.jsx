@@ -4,7 +4,7 @@ import {Link, browserHistory} from 'react-router';
 
 var Login = React.createClass({
 	getInitialState: function(){
-		return {email: '', password: null}
+		return {email: '', password: null, msg: ""}
 	},
 	handleChange: function(input, event){
 		if(input === "email"){
@@ -18,7 +18,11 @@ var Login = React.createClass({
 		$.ajax({
 			method: 'POST',
 			url: '/api/login/',
-			data: this.state
+			data: this.state,
+			error: ((data) => {
+				console.log(typeof data.responseText)
+				this.setState({msg: data.responseText})
+			}).bind(this)
 		})
 		.done((data) => {
 			console.log("Received User Data", data);
@@ -57,11 +61,14 @@ var Login = React.createClass({
 						<br />
 
 						<button
-						className="button"
+						className="logout"
 						type="submit"
 						>Sign In</button>
+
 					</form>
 				</div>
+
+				<p className="error">{this.state.msg}</p>
 
 				<p className="about">Don't have an account? <Link to={'/signup'}>Sign Up!</Link></p>
 
