@@ -29,6 +29,10 @@
 	text-align: center;
 }
 
+.boards {
+	text-align: center;
+}
+
 .about {
     text-align: justify;
     -moz-text-align-last: center;
@@ -37,6 +41,14 @@
 	font-family: "Courier New", Courier, monospace;
 	margin-left: 25%;
 	margin-right: 25%;
+}
+
+.list {
+	font-size: 18px;
+	font-family: "Courier New", Courier, monospace;
+	list-style: none;
+	color: #e8595e;
+	margin-right: 40px;
 }
 
 .pin {
@@ -80,6 +92,10 @@ a:active {
 	margin-left: 200px;
 }
 
+.divider {
+	width: 750px;
+}
+
 .input {
 	border: none;
 	border-bottom: 2px solid black;
@@ -90,6 +106,15 @@ a:active {
 }
 
 .button {
+	background-color: #e8595e;
+	border: none;
+	color: white;
+	padding: 10px 25px;
+	margin: 5px;
+	cursor: pointer;
+}
+
+.logout {
 	background-color: #e8595e;
 	border: none;
 	color: white;

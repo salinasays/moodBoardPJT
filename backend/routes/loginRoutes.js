@@ -19,6 +19,7 @@ const signIn = (req, res) => {
 			console.log("Password is correct!")
 
 			req.session.email = user.email;
+			req.session.userId = user.id;
 			req.session.save();
 			console.log("Updated Session?", req.session);
 

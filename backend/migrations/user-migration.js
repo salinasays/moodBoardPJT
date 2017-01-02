@@ -2,7 +2,7 @@ module.exports = {
 	up: function(queryInterface, Sequelize) {
 		return queryInterface.changeColumn(
 			'users',
-			'lastName',
+			'email',
 			{
 				type: Sequelize.STRING,
 				allowNull: false			

@@ -4,7 +4,7 @@ var About = React.createClass({
 	render: function(){
 		return(
 			<div>
-				<hr />
+				
 				<h2 className="title">_about</h2>
 				<br />
 

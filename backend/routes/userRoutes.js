@@ -1,5 +1,6 @@
 const userRouter = require('express').Router();
-const User = require('../models').user 
+const User = require('../models').user;
+const Board = require('../models').board;
 
 const getUsers = (req, res) => {
 	User.findAll()
@@ -9,7 +10,7 @@ const getUsers = (req, res) => {
 }
 
 const getOneUser = (req, res) => {
-	User.findById(req.params.id)
+	User.findById(req.session.userId)
 	.then((user) => {
 		res.send(user)
 	}) 
@@ -32,13 +33,36 @@ const deleteUser = (req, res) => {
 	})
 }
 
+const userCreatesBoard = (req, res) => {
+	User.findById(req.params.id)
+	.then(() => {
+		Board.create(req.body)
+	})
+	.then((board) => {
+		res.send(board)
+	})
+}
+
+const getUsersBoards = (req, res) => {
+	User.findById(req.params.id)
+	.then(() => {
+		Board.findAll()
+	})
+	.then((boards) => {
+		res.send(boards)
+	})
+}
+
 userRouter.route('/')
 	.get(getUsers)
 	.post(createUser)
 
-userRouter.route('/:id')
+userRouter.route('/id')
 	.get(getOneUser)
 	.delete(deleteUser)
 
+userRouter.route('/:id/boards')
+	.get(getUsersBoards)
+	.post(userCreatesBoard)
 
 module.exports = userRouter;
