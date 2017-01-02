@@ -27,7 +27,7 @@ var Signup = React.createClass({
 	render: function(){
 		return(
 			<div>
-				<hr />
+				
 				<h2 className="title">_sign up</h2>
 				
 				<div className="form">

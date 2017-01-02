@@ -8,6 +8,7 @@ import Create from './createBoard';
 import Login from './login';
 import About from './about';
 import Signup from './signup';
+import Account from './account';
 import $ from 'jquery';
 
 var App = React.createClass({
@@ -36,7 +37,6 @@ var App = React.createClass({
 
       	<div className="logo-class">
         	<img className="logo" src={require('../images/reLogo.png')} />
-       
         </div>
 
         <nav className="navbar navbar-inverse">
@@ -46,11 +46,16 @@ var App = React.createClass({
               <Link to='About'>_about</Link>
               <Link to='ImageSearch'>_search</Link>
               <Link to='Create'>_create</Link>
-              <Link to='Login'>_login</Link>
+
+              {this.state.email ? 
+                <Link to='Account'>_account</Link> : 
+              <Link to='Login'>_login</Link>}
+
             </div>
           </div>
         </nav>
-        {this.state.email ? <h2>{'Hello there, ' + this.state.email}</h2> : null}
+
+        <hr />
         {this.props.children}
 
       </div>
@@ -67,6 +72,7 @@ ReactDOM.render(
  		<Route path="Create" component={Create} />
     <Route path="Login" component={Login} />
     <Route path="Signup" component={Signup} />
+    <Route path="Account" component={Account} />
   	</Route>
   </Router>,
   document.getElementById('root')

@@ -65,7 +65,7 @@ var ImageSearch = React.createClass({
 		
 		return (
 			<div>
-			<hr />
+			
 			<h2 className="title">_search for inspiration</h2>
 			
 			<div className="form">

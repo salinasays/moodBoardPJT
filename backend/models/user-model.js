@@ -4,20 +4,20 @@
  	var User = sequelize.define("user", {
  		email: {
  			type: DataTypes.STRING,
- 			required: true,
+ 			allowNull: false,
  			isEmail: true
  		},
  		firstName: {
  			type: DataTypes.STRING,
- 			required: true
+ 			allowNull: false
  		},
  		lastName: {
  			type: DataTypes.STRING,
- 			required: true
+ 			allowNull: false
  		},
    	 	password: {
  			type: DataTypes.STRING,
- 			required: true,
+ 			allowNull: false,
  			len: [5, 15]
  		}
 

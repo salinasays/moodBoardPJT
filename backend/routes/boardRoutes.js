@@ -1,5 +1,6 @@
 const boardRouter = require('express').Router();
-const Board = require('../models/board-model.js');
+const Board = require('../models').board;
+const User=require('../models').user;
 
 const getBoards = (req, res) => {
 	Board.findAll()
@@ -16,12 +17,14 @@ const getOneBoard = (req, res) => {
 }
 
 const createBoard = (req, res) => {
-	Board.create({
-		title: req.body.title
-	})
-	.then((board) => {
-		res.send(board)
-	})
+		var board = req.body
+		board["userId"] = req.session.userId
+
+		Board.create(board)
+		.then((data) => {
+		res.send("You've created a new board!")
+		})
+	
 }
 
 const deleteBoard = (req, res) => {
@@ -37,6 +40,7 @@ const deleteBoard = (req, res) => {
 boardRouter.route('/')
 	.get(getBoards)
 	.post(createBoard)
+
 
 boardRouter.route('/:id')
 	.get(getOneBoard)

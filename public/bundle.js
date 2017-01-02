@@ -82,6 +82,10 @@
 	
 	var _signup2 = _interopRequireDefault(_signup);
 	
+	var _account = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./account\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	
+	var _account2 = _interopRequireDefault(_account);
+	
 	var _jquery = __webpack_require__(234);
 	
 	var _jquery2 = _interopRequireDefault(_jquery);
@@ -153,7 +157,11 @@
 	              { to: 'Create' },
 	              '_create'
 	            ),
-	            _react2.default.createElement(
+	            this.state.email ? _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: 'Account' },
+	              '_account'
+	            ) : _react2.default.createElement(
 	              _reactRouter.Link,
 	              { to: 'Login' },
 	              '_login'
@@ -161,11 +169,7 @@
 	          )
 	        )
 	      ),
-	      this.state.email ? _react2.default.createElement(
-	        'h2',
-	        null,
-	        'Hello there, ' + this.state.email
-	      ) : null,
+	      _react2.default.createElement('hr', null),
 	      this.props.children
 	    );
 	  }
@@ -182,7 +186,8 @@
 	    _react2.default.createElement(_reactRouter.Route, { path: 'ImageSearch', component: _imageSearch2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: 'Create', component: _createBoard2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: 'Login', component: _login2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: 'Signup', component: _signup2.default })
+	    _react2.default.createElement(_reactRouter.Route, { path: 'Signup', component: _signup2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: 'Account', component: _account2.default })
 	  )
 	), document.getElementById('root'));
 
@@ -26590,7 +26595,6 @@
 			return _react2.default.createElement(
 				'div',
 				null,
-				_react2.default.createElement('hr', null),
 				_react2.default.createElement(
 					'h2',
 					{ className: 'title' },
@@ -36920,7 +36924,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".ribbon {\n  width: 35px;\n  position: absolute;\n  top: 0px;\n  height: 75px;\n  right: 50px;\n  transition: 1.5s;\n}\n\n.ribbon:hover {\n  height: 100px;\n  transition: 2s;\n}\n\n.logo {\n\tpadding-top: 10px;\n\tpadding-left: 10px;\n\tpadding-right: 20px;\n\twidth: 250px;\n\tdisplay: inline-block;\n\tfloat: left;\n}\n\n.title {\n\tmargin-left: 35px;\n}\n\n.heading {\n\ttext-align: center;\n}\n\n.about {\n    text-align: justify;\n    -moz-text-align-last: center;\n    text-align-last: center;\n\tfont-size: 15px;\n\tfont-family: \"Courier New\", Courier, monospace;\n\tmargin-left: 25%;\n\tmargin-right: 25%;\n}\n\n.pin {\n\twidth: 125px;\n\tpadding-left: 42%;\n}\n\n.welcome {\n\n\tmargin-right: auto;\n\tmargin-top: auto;\n\tmargin-left: 110px;\n}\n\n.nav {\n\tpadding-top: 50px;\n\tpadding-bottom: 10px;\n}\n\na:link {\n\ttext-decoration: none;\n\tcolor: black;\n\tpadding-right: 10%;\n\tpadding-left: 0px;\n\tfont-family: \"Courier New\", Courier, monospace;\n}\n\na:hover {\n\ttext-decoration: underline;\n}\n\na:active {\n\ttext-decoration: underline;\n\tcolor: #e8595e;\n}\n\n.form {\n\tpadding-top: 50px;\n\tpadding-left: 100px;\n\tmargin: 0 auto;\n\tmargin-left: 200px;\n}\n\n.input {\n\tborder: none;\n\tborder-bottom: 2px solid black;\n\twidth: 600px;\n\tpadding: 12px 20px;\n\tleft: 20%;\n\tright: 20%;\n}\n\n.button {\n\tbackground-color: #e8595e;\n\tborder: none;\n\tcolor: white;\n\tpadding: 10px 25px;\n\tmargin: 5px;\n\tcursor: pointer;\n}\n\n.containpics {\n\twidth: auto;\n\theight: auto;\n\tpadding-top: 20px;\n\tpadding-right: 20px;\n\tcursor: pointer;\n}\n\n.myPics {\n\theight: 250px;\n\tpadding: 2px;\n}\n\n.collection-imgs {\n\theight: 300px;\n\tmargin-top:50px;\n}\n\n.savedImg {\n\theight: 250px;\n}\n", ""]);
+	exports.push([module.id, ".ribbon {\n  width: 35px;\n  position: absolute;\n  top: 0px;\n  height: 75px;\n  right: 50px;\n  transition: 1.5s;\n}\n\n.ribbon:hover {\n  height: 100px;\n  transition: 2s;\n}\n\n.logo {\n\tpadding-top: 10px;\n\tpadding-left: 10px;\n\tpadding-right: 20px;\n\twidth: 250px;\n\tdisplay: inline-block;\n\tfloat: left;\n}\n\n.title {\n\tmargin-left: 35px;\n}\n\n.heading {\n\ttext-align: center;\n}\n\n.about {\n    text-align: justify;\n    -moz-text-align-last: center;\n    text-align-last: center;\n\tfont-size: 15px;\n\tfont-family: \"Courier New\", Courier, monospace;\n\tmargin-left: 25%;\n\tmargin-right: 25%;\n}\n\n.pin {\n\twidth: 125px;\n\tpadding-left: 42%;\n}\n\n.welcome {\n\n\tmargin-right: auto;\n\tmargin-top: auto;\n\tmargin-left: 110px;\n}\n\n.nav {\n\tpadding-top: 30px;\n\tpadding-bottom: 10px;\n}\n\na:link {\n\ttext-decoration: none;\n\tcolor: black;\n\tpadding-right: 10%;\n\tpadding-left: 0px;\n\tfont-family: \"Courier New\", Courier, monospace;\n}\n\na:hover {\n\ttext-decoration: underline;\n}\n\na:active {\n\ttext-decoration: underline;\n\tcolor: #e8595e;\n}\n\n.form {\n\tpadding-top: 50px;\n\tpadding-left: 100px;\n\tmargin: 0 auto;\n\tmargin-left: 200px;\n}\n\n.input {\n\tborder: none;\n\tborder-bottom: 2px solid black;\n\twidth: 600px;\n\tpadding: 12px 20px;\n\tleft: 20%;\n\tright: 20%;\n}\n\n.button {\n\tbackground-color: #e8595e;\n\tborder: none;\n\tcolor: white;\n\tpadding: 10px 25px;\n\tmargin: 5px;\n\tcursor: pointer;\n}\n\n.containpics {\n\twidth: auto;\n\theight: auto;\n\tpadding-top: 20px;\n\tpadding-right: 20px;\n\tcursor: pointer;\n}\n\n.myPics {\n\theight: 250px;\n\tpadding: 2px;\n}\n\n.collection-imgs {\n\theight: 300px;\n\tmargin-top:50px;\n}\n\n.savedImg {\n\theight: 250px;\n}\n", ""]);
 	
 	// exports
 
@@ -37256,7 +37260,6 @@
 			return _react2.default.createElement(
 				"div",
 				null,
-				_react2.default.createElement("hr", null),
 				_react2.default.createElement(
 					"h2",
 					{ className: "title" },
@@ -37293,20 +37296,57 @@
 	
 	var _collection2 = _interopRequireDefault(_collection);
 	
+	var _jquery = __webpack_require__(234);
+	
+	var _jquery2 = _interopRequireDefault(_jquery);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Create = _react2.default.createClass({
 		displayName: 'Create',
 	
+		getInitialState: function getInitialState() {
+			return { title: "" };
+		},
+		handleChange: function handleChange(input, event) {
+			if (input === "title") {
+				this.setState({ title: event.target.value });
+			}
+		},
+		createBoard: function createBoard(event) {
+			event.preventDefault();
+			_jquery2.default.ajax({
+				url: '/api/boards',
+				type: 'POST',
+				data: this.state
+			});
+		},
 		render: function render() {
 			return _react2.default.createElement(
 				'div',
 				null,
-				_react2.default.createElement('hr', null),
 				_react2.default.createElement(
 					'h2',
 					{ className: 'title' },
 					'_your moodBoard'
+				),
+				_react2.default.createElement(
+					'form',
+					{ onSubmit: this.createBoard },
+					_react2.default.createElement('input', {
+						className: 'input',
+						type: 'text',
+						placeholder: 'Title of Your Board',
+						onChange: this.handleChange.bind(this, "title")
+					}),
+					_react2.default.createElement(
+						'button',
+						{
+							className: 'button',
+							type: 'submit'
+						},
+						'Create'
+					)
 				),
 				_react2.default.createElement(
 					'div',
@@ -37370,7 +37410,6 @@
 			return _react2.default.createElement(
 				'div',
 				null,
-				_react2.default.createElement('hr', null),
 				_react2.default.createElement(
 					'h2',
 					{ className: 'title' },
@@ -37452,7 +37491,6 @@
 			return _react2.default.createElement(
 				"div",
 				null,
-				_react2.default.createElement("hr", null),
 				_react2.default.createElement(
 					"h2",
 					{ className: "title" },
@@ -37544,7 +37582,6 @@
 			return _react2.default.createElement(
 				'div',
 				null,
-				_react2.default.createElement('hr', null),
 				_react2.default.createElement(
 					'h2',
 					{ className: 'title' },

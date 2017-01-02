@@ -27,7 +27,7 @@ var Login = React.createClass({
 	render: function(){
 		return(
 			<div>
-				<hr />
+			
 				<h2 className="title">_login</h2>
 				
 				<div className="form">
