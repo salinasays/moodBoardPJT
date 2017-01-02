@@ -82,7 +82,7 @@
 	
 	var _signup2 = _interopRequireDefault(_signup);
 	
-	var _account = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./account\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _account = __webpack_require__(247);
 	
 	var _account2 = _interopRequireDefault(_account);
 	
@@ -121,12 +121,12 @@
 	      _react2.default.createElement(
 	        'a',
 	        { href: 'http://linkedin.com/in/salinafu', target: '_blank' },
-	        _react2.default.createElement('img', { className: 'ribbon', src: __webpack_require__(247) })
+	        _react2.default.createElement('img', { className: 'ribbon', src: __webpack_require__(248) })
 	      ),
 	      _react2.default.createElement(
 	        'div',
 	        { className: 'logo-class' },
-	        _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(248) })
+	        _react2.default.createElement('img', { className: 'logo', src: __webpack_require__(249) })
 	      ),
 	      _react2.default.createElement(
 	        'nav',
@@ -36924,7 +36924,7 @@
 	
 	
 	// module
-	exports.push([module.id, ".ribbon {\n  width: 35px;\n  position: absolute;\n  top: 0px;\n  height: 75px;\n  right: 50px;\n  transition: 1.5s;\n}\n\n.ribbon:hover {\n  height: 100px;\n  transition: 2s;\n}\n\n.logo {\n\tpadding-top: 10px;\n\tpadding-left: 10px;\n\tpadding-right: 20px;\n\twidth: 250px;\n\tdisplay: inline-block;\n\tfloat: left;\n}\n\n.title {\n\tmargin-left: 35px;\n}\n\n.heading {\n\ttext-align: center;\n}\n\n.about {\n    text-align: justify;\n    -moz-text-align-last: center;\n    text-align-last: center;\n\tfont-size: 15px;\n\tfont-family: \"Courier New\", Courier, monospace;\n\tmargin-left: 25%;\n\tmargin-right: 25%;\n}\n\n.pin {\n\twidth: 125px;\n\tpadding-left: 42%;\n}\n\n.welcome {\n\n\tmargin-right: auto;\n\tmargin-top: auto;\n\tmargin-left: 110px;\n}\n\n.nav {\n\tpadding-top: 30px;\n\tpadding-bottom: 10px;\n}\n\na:link {\n\ttext-decoration: none;\n\tcolor: black;\n\tpadding-right: 10%;\n\tpadding-left: 0px;\n\tfont-family: \"Courier New\", Courier, monospace;\n}\n\na:hover {\n\ttext-decoration: underline;\n}\n\na:active {\n\ttext-decoration: underline;\n\tcolor: #e8595e;\n}\n\n.form {\n\tpadding-top: 50px;\n\tpadding-left: 100px;\n\tmargin: 0 auto;\n\tmargin-left: 200px;\n}\n\n.input {\n\tborder: none;\n\tborder-bottom: 2px solid black;\n\twidth: 600px;\n\tpadding: 12px 20px;\n\tleft: 20%;\n\tright: 20%;\n}\n\n.button {\n\tbackground-color: #e8595e;\n\tborder: none;\n\tcolor: white;\n\tpadding: 10px 25px;\n\tmargin: 5px;\n\tcursor: pointer;\n}\n\n.containpics {\n\twidth: auto;\n\theight: auto;\n\tpadding-top: 20px;\n\tpadding-right: 20px;\n\tcursor: pointer;\n}\n\n.myPics {\n\theight: 250px;\n\tpadding: 2px;\n}\n\n.collection-imgs {\n\theight: 300px;\n\tmargin-top:50px;\n}\n\n.savedImg {\n\theight: 250px;\n}\n", ""]);
+	exports.push([module.id, ".ribbon {\n  width: 35px;\n  position: absolute;\n  top: 0px;\n  height: 75px;\n  right: 50px;\n  transition: 1.5s;\n}\n\n.ribbon:hover {\n  height: 100px;\n  transition: 2s;\n}\n\n.logo {\n\tpadding-top: 10px;\n\tpadding-left: 10px;\n\tpadding-right: 20px;\n\twidth: 250px;\n\tdisplay: inline-block;\n\tfloat: left;\n}\n\n.title {\n\tmargin-left: 35px;\n}\n\n.heading {\n\ttext-align: center;\n}\n\n.boards {\n\tmargin-left: 25%;\n\tmargin-right: 25%;\n}\n\n.about {\n    text-align: justify;\n    -moz-text-align-last: center;\n    text-align-last: center;\n\tfont-size: 15px;\n\tfont-family: \"Courier New\", Courier, monospace;\n\tmargin-left: 25%;\n\tmargin-right: 25%;\n}\n\n.list {\n\tfont-size: 18px;\n\tfont-family: \"Courier New\", Courier, monospace;\n\tlist-style: none;\n\tcolor: #e8595e;\n}\n\n.pin {\n\twidth: 125px;\n\tpadding-left: 42%;\n}\n\n.welcome {\n\n\tmargin-right: auto;\n\tmargin-top: auto;\n\tmargin-left: 110px;\n}\n\n.nav {\n\tpadding-top: 50px;\n\tpadding-bottom: 10px;\n}\n\na:link {\n\ttext-decoration: none;\n\tcolor: black;\n\tpadding-right: 10%;\n\tpadding-left: 0px;\n\tfont-family: \"Courier New\", Courier, monospace;\n}\n\na:hover {\n\ttext-decoration: underline;\n}\n\na:active {\n\ttext-decoration: underline;\n\tcolor: #e8595e;\n}\n\n.form {\n\tpadding-top: 50px;\n\tpadding-left: 100px;\n\tmargin: 0 auto;\n\tmargin-left: 200px;\n}\n\n.divider {\n\twidth: 750px;\n}\n\n.input {\n\tborder: none;\n\tborder-bottom: 2px solid black;\n\twidth: 600px;\n\tpadding: 12px 20px;\n\tleft: 20%;\n\tright: 20%;\n}\n\n.button {\n\tbackground-color: #e8595e;\n\tborder: none;\n\tcolor: white;\n\tpadding: 10px 25px;\n\tmargin: 5px;\n\tcursor: pointer;\n}\n\n.logout {\n\tbackground-color: #e8595e;\n\tborder: none;\n\tcolor: white;\n\tpadding: 10px 25px;\n\tmargin: 5px;\n\tcursor: pointer;\n}\n\n.containpics {\n\twidth: auto;\n\theight: auto;\n\tpadding-top: 20px;\n\tpadding-right: 20px;\n\tcursor: pointer;\n}\n\n.myPics {\n\theight: 250px;\n\tpadding: 2px;\n}\n\n.collection-imgs {\n\theight: 300px;\n\tmargin-top:50px;\n}\n\n.savedImg {\n\theight: 250px;\n}\n", ""]);
 	
 	// exports
 
@@ -37646,10 +37646,133 @@
 /* 247 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "368cbbef7727810d14005b98c433841c.png";
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _jquery = __webpack_require__(234);
+	
+	var _jquery2 = _interopRequireDefault(_jquery);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Account = _react2.default.createClass({
+		displayName: 'Account',
+	
+		getInitialState: function getInitialState() {
+			return { firstName: "", lastName: "", email: "", boards: null };
+		},
+		componentDidMount: function componentDidMount() {
+			var _this = this;
+	
+			_jquery2.default.ajax({
+				url: '/api/users/id',
+				type: 'GET',
+				data: this.state
+			}).then(function (user) {
+				_this.setState({ firstName: user.firstName, lastName: user.lastName, email: user.email });
+	
+				_jquery2.default.ajax({
+					url: '/api/boards',
+					type: 'GET',
+					data: _this.state
+				}).then(function (board) {
+					console.log(board);
+					_this.setState({ boards: board });
+				});
+			});
+		},
+		render: function render() {
+			return _react2.default.createElement(
+				'div',
+				null,
+				_react2.default.createElement(
+					'h2',
+					{ className: 'title' },
+					'_your account'
+				),
+				_react2.default.createElement('br', null),
+				' ',
+				_react2.default.createElement('br', null),
+				_react2.default.createElement(
+					'h3',
+					{ className: 'boards' },
+					'Welcome back, ',
+					this.state.firstName ? this.state.firstName : null
+				),
+				_react2.default.createElement('br', null),
+				_react2.default.createElement(
+					'p',
+					{ className: 'about' },
+					'Name: ',
+					this.state.firstName,
+					' ',
+					this.state.lastName
+				),
+				_react2.default.createElement(
+					'p',
+					{ className: 'about' },
+					'Email: ',
+					this.state.email
+				),
+				_react2.default.createElement('hr', { className: 'divider' }),
+				_react2.default.createElement(
+					'h3',
+					{ className: 'boards' },
+					'Your Boards'
+				),
+				_react2.default.createElement(
+					'center',
+					null,
+					_react2.default.createElement(
+						'ul',
+						{ className: 'list' },
+						!this.state.boards ? null : this.state.boards.map(function (val, idx) {
+	
+							var boardTitle = val.title;
+	
+							return _react2.default.createElement(
+								'li',
+								{ key: idx },
+								boardTitle
+							);
+						})
+					)
+				),
+				_react2.default.createElement('br', null),
+				_react2.default.createElement('br', null),
+				_react2.default.createElement(
+					'center',
+					null,
+					_react2.default.createElement(
+						'button',
+						{
+							className: 'logout',
+							type: 'submit'
+						},
+						'Log Out'
+					)
+				)
+			);
+		}
+	});
+	
+	exports.default = Account;
 
 /***/ },
 /* 248 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "368cbbef7727810d14005b98c433841c.png";
+
+/***/ },
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "f3d7527265cb0f69a6b8dc022e05d078.png";

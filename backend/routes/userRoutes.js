@@ -10,7 +10,7 @@ const getUsers = (req, res) => {
 }
 
 const getOneUser = (req, res) => {
-	User.findById(req.params.id)
+	User.findById(req.session.userId)
 	.then((user) => {
 		res.send(user)
 	}) 
@@ -57,7 +57,7 @@ userRouter.route('/')
 	.get(getUsers)
 	.post(createUser)
 
-userRouter.route('/:id')
+userRouter.route('/id')
 	.get(getOneUser)
 	.delete(deleteUser)
 

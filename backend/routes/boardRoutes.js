@@ -3,7 +3,10 @@ const Board = require('../models').board;
 const User=require('../models').user;
 
 const getBoards = (req, res) => {
-	Board.findAll()
+	User.findById(req.session.userId)
+	.then((user) => {
+		return user.getBoards()
+	})
 	.then((boards) => {
 		res.send(boards)
 	})
