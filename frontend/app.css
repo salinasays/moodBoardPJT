@@ -30,8 +30,7 @@
 }
 
 .boards {
-	margin-left: 25%;
-	margin-right: 25%;
+	text-align: center;
 }
 
 .about {
@@ -49,6 +48,7 @@
 	font-family: "Courier New", Courier, monospace;
 	list-style: none;
 	color: #e8595e;
+	margin-right: 40px;
 }
 
 .pin {

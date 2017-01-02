@@ -1,6 +1,6 @@
 import React from 'react';
 import $ from 'jquery';
-import {Link} from 'react-router';
+import {Link, browserHistory} from 'react-router';
 
 var Login = React.createClass({
 	getInitialState: function(){
@@ -22,6 +22,7 @@ var Login = React.createClass({
 		})
 		.done((data) => {
 			console.log("Received User Data", data);
+			browserHistory.push('/account')
 		})
 	},
 	render: function(){

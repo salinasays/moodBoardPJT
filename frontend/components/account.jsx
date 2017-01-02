@@ -32,8 +32,6 @@ var Account = React.createClass({
 				<br /> <br />
 				<h3 className="boards">Welcome back, {this.state.firstName ? this.state.firstName : null}</h3>
 
-				<br />
-
 				<p className="about">Name: {this.state.firstName} {this.state.lastName}</p>
 
 				<p className="about">Email: {this.state.email}</p>
