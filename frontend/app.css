@@ -1,0 +1,121 @@
+.ribbon {
+  width: 35px;
+  position: absolute;
+  top: 0px;
+  height: 75px;
+  right: 50px;
+  transition: 1.5s;
+}
+
+.ribbon:hover {
+  height: 100px;
+  transition: 2s;
+}
+
+.logo {
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 20px;
+	width: 250px;
+	display: inline-block;
+	float: left;
+}
+
+.title {
+	margin-left: 35px;
+}
+
+.heading {
+	text-align: center;
+}
+
+.about {
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+	font-size: 15px;
+	font-family: "Courier New", Courier, monospace;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+.pin {
+	width: 125px;
+	padding-left: 42%;
+}
+
+.welcome {
+
+	margin-right: auto;
+	margin-top: auto;
+	margin-left: 110px;
+}
+
+.nav {
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+
+a:link {
+	text-decoration: none;
+	color: black;
+	padding-right: 10%;
+	padding-left: 0px;
+	font-family: "Courier New", Courier, monospace;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	text-decoration: underline;
+	color: #e8595e;
+}
+
+.form {
+	padding-top: 50px;
+	padding-left: 100px;
+	margin: 0 auto;
+	margin-left: 200px;
+}
+
+.input {
+	border: none;
+	border-bottom: 2px solid black;
+	width: 600px;
+	padding: 12px 20px;
+	left: 20%;
+	right: 20%;
+}
+
+.button {
+	background-color: #e8595e;
+	border: none;
+	color: white;
+	padding: 10px 25px;
+	margin: 5px;
+	cursor: pointer;
+}
+
+.containpics {
+	width: auto;
+	height: auto;
+	padding-top: 20px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+
+.myPics {
+	height: 250px;
+	padding: 2px;
+}
+
+.collection-imgs {
+	height: 300px;
+	margin-top:50px;
+}
+
+.savedImg {
+	height: 250px;
+}
