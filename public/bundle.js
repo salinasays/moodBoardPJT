@@ -37445,7 +37445,7 @@
 						_react2.default.createElement('br', null),
 						_react2.default.createElement('input', {
 							className: 'input',
-							type: 'text',
+							type: 'password',
 							placeholder: 'password',
 							onChange: this.handleChange.bind(this, "password")
 						}),
@@ -37565,6 +37565,8 @@
 	
 	var _jquery2 = _interopRequireDefault(_jquery);
 	
+	var _reactRouter = __webpack_require__(178);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Signup = _react2.default.createClass({
@@ -37587,9 +37589,12 @@
 		acctSignUp: function acctSignUp(event) {
 			event.preventDefault();
 			_jquery2.default.ajax({
+				method: 'POST',
 				url: '/api/users',
-				type: 'POST',
 				data: this.state
+			}).done(function (data) {
+				console.log("Received User Data", data);
+				_reactRouter.browserHistory.push('/account');
 			});
 		},
 		render: function render() {
@@ -37634,7 +37639,7 @@
 						_react2.default.createElement('br', null),
 						_react2.default.createElement('input', {
 							className: 'input',
-							type: 'text',
+							type: 'password',
 							placeholder: 'password',
 							onChange: this.handleChange.bind(this, "password")
 						}),

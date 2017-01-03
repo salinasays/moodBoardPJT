@@ -1,5 +1,6 @@
 import React from 'react';
 import $ from 'jquery';
+import {browserHistory} from 'react-router';
 
 var Signup = React.createClass({
 	getInitialState: function(){
@@ -19,9 +20,13 @@ var Signup = React.createClass({
 	acctSignUp: function(event){
 		event.preventDefault()
 		$.ajax({
+			method: 'POST',
 			url: '/api/users',
-			type: 'POST',
 			data: this.state
+		})
+		.done((data) => {
+			console.log("Received User Data", data);
+			browserHistory.push('/account')
 		})
 	},
 	render: function(){
@@ -62,7 +67,7 @@ var Signup = React.createClass({
 
 						<input
 						className="input"
-						type="text"
+						type="password"
 						placeholder="password"
 						onChange={this.handleChange.bind(this, "password")}
 						/>

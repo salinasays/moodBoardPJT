@@ -18,8 +18,11 @@ const getOneUser = (req, res) => {
 
 const createUser = (req, res) => {
 	User.create(req.body)
-	.then((data) => {
-		res.send(data)
+	.then((user) => {
+		req.session.email = user.email;
+		req.session.userId =user.id;
+		req.session.save()
+		res.status(200).send(user)
 	})
 }
 

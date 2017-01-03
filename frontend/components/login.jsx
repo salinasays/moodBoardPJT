@@ -52,7 +52,7 @@ var Login = React.createClass({
 
 						<input
 						className="input"
-						type="text"
+						type="password"
 						placeholder="password"
 						onChange={this.handleChange.bind(this, "password")}
 						/>
